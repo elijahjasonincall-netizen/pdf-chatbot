@@ -57,7 +57,7 @@ if uploaded_file:
     # -------LLM-----
     model = ChatGroq(
         model="llama-3.1-8b-instant",
-        api_key="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",
+        api_key=st.secrets["GROQ_API_KEY"]
     )
 
     def answer_question(question: str) -> str:
